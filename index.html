@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Поздравление с 7 мая</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <button class="btn" onclick="showCard()">Открыть открытку</button>
+
+    <div class="card" id="card">
+      <h2>С Днём защитника Отечества!</h2>
+      <p>Пусть в этот день будет мир, радость и благодарность!</p>
+      <button class="continue-btn" onclick="showInvitation()">Продолжить</button>
+    </div>
+
+    <div class="invitation" id="invitation">
+      <h3>Приглашение</h3>
+      <p>Адрес: ул. Примерная, 7</p>
+      <p>Дата: 7 мая</p>
+      <p>Время: 18:00</p>
+      <p>Ждём тебя!</p>
+      <p>
+        <a href="https://www.instagram.com/teris_ashchybulak?igsh=M3poYjRkdDc3N2hj" target="_blank">
+          Посмотреть в Instagram
+        </a>
+      </p>
+    </div>
+
+    <div class="photo-grid" id="photos">
+      <h3>Наши фото</h3>
+      <div class="grid">
+        <div class="photo-box"></div>
+        <div class="photo-box">Фото 2</div>
+        <div class="photo-box">Фото 3</div>
+        <div class="photo-box">Фото 4</div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
