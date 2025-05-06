@@ -1,0 +1,104 @@
+body {
+    background: linear-gradient(135deg, #0d1b2a, #1e3c72, #a8d0e6, #ffffff);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    font-family: 'Academy Engraved LET', sans-serif;;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+  }
+  
+  @keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .container {
+    text-align: center;
+    padding: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  .btn, .continue-btn {
+    background-color: #1e3c72;
+    color: white;
+    font-size: 18px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    margin: 10px;
+  }
+  
+  .btn:hover, .continue-btn:hover {
+    transform: scale(1.1);
+    background-color: #69b7e0;
+  }
+  
+  .card, .invitation {
+    background-color: rgba(255, 255, 255, 0.95);
+    color: #0d1b2a;
+    border-radius: 20px;
+    padding: 30px;
+    margin: 30px auto 0 auto;
+    width: 90%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    display: none;
+    animation: fadeIn 0.5s ease-in-out forwards;
+    transform: scale(0.95);
+  }
+  
+  .invitation a {
+    color: #1e3c72;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .invitation a:hover {
+    color: #69b7e0;
+  }
+  
+  .photo-grid {
+    margin-top: 50px;
+  }
+  
+  .photo-grid h3 {
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    justify-content: center;
+  }
+  
+  .photo-box {
+    background-color: white;
+    padding: 8px;
+    border-radius: 14px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .photo-box img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+  }
+  
+  .photo-box:hover {
+    transform: scale(1.05);
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0; transform: scale(0.9);}
+    to {opacity: 1; transform: scale(1);}
+  }
